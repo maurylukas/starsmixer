@@ -1,7 +1,7 @@
 # start of imports
-from mycv import app
+from sm import app
 # end of imports
 
 # running website
 if __name__ == '__main__':
-    app.run ()
+    app.run (debug=True)

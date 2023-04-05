@@ -1,10 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- Linking to base file -->
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block body %}
+<!-- Page content holder -->
+<div class="section wf-section">
+  <div class="w-container">
+    <h1 class="brand_text">Select two stars to mix them</h1>
+    <div class="w-dyn-list">
+      <div role="list" class="w-dyn-items w-row">
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/city" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25edfad34d52a3_photo-1416934625760-d56f5e79f6fe-square700.jpg" alt=""/>
+            <div class="title">Clouds over Ranier</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/together" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed48ca4d52a1_photo-1427955569621-3e494de2b1d2-square700.jpg" alt="" sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.3312530517578px, 300px" srcset="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed48ca4d52a1_photo-1427955569621-3e494de2b1d2-square700-p-500x.jpeg 500w, https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed48ca4d52a1_photo-1427955569621-3e494de2b1d2-square700.jpg 700w"/>
+            <div class="title">White Frost</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/blue" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed42844d52ab_photo-1428184003419-4cfd6ab3d280-square700.jpg" alt=""/>
+            <div class="title">Macaw Feathers</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/coast" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25edef6e4d52a0_photo-1444090542259-0af8fa96557e-square700.jpg" alt=""/>
+            <div class="title">Burning Clouds</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/night" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed2f8a4d52a2_photo-1432251407527-504a6b4174a2-square700.jpg" alt="" sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.3312530517578px, 300px" srcset="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed2f8a4d52a2_photo-1432251407527-504a6b4174a2-square700-p-500x.jpeg 500w, https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed2f8a4d52a2_photo-1432251407527-504a6b4174a2-square700.jpg 700w"/>
+            <div class="title">Pool Ripples</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/art" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed49eb4d52a7_photo-1433155327100-12aac6a14ff1-square700.jpg" alt=""/>
+            <div class="title">Yellow Sunset</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/play" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed1f6f4d52af_photo-1433245437947-a0595ee87118-square700.jpg" alt=""/>
+            <div class="title">Silence</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/lift" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed7f674d52ad_photo-1436397543931-01c4a5162bdb-square700.jpg" alt=""/>
+            <div class="title">Red Wall</div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a href="/photos/dog" class="photo-link-block w-inline-block">
+            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed48de4d52a9_photo-1441906363162-903afd0d3d52-square700.jpg" alt=""/>
+            <div class="title">Blue Foam</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End content -->
+{% endblock %}
