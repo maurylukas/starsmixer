@@ -3,69 +3,89 @@
 
 {% block body %}
 <!-- Page content holder -->
-<div class="section wf-section">
+<div class="section wf-section" style="background-color: #4DA8A2">
   <div class="w-container">
     <h1 class="brand_text">Select two stars to mix them</h1>
     <div class="w-dyn-list">
       <div role="list" class="w-dyn-items w-row">
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="static/img/{{stars[0]}}/{{adam}}" alt="Adam Sandler"/>
-            <div class="title">Adam Sandler</div>
+          <a href="#" class="photo-link-block w-inline-block select" data-star="{{stars[0]}}" data-astro="{{adam}}">
+            <img src="static/img/origin/{{stars[0]}}/{{adam}}" alt="Adam Sandler"/>
+            <div id="adam" class="title">Adam Sandler</div>
           </a>
         </div>
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="static/img/{{stars[1]}}/{{amanda}}" alt="Amanda Seyfried"/>
-            <div class="title">Amanda Seyfried</div>
+          <a href="#" class="photo-link-block w-inline-block select" data-star="{{stars[1]}}" data-astro="{{amanda}}">
+            <img src="static/img/origin/{{stars[1]}}/{{amanda}}" alt="Amanda Seyfried"/>
+            <div id="amanda" class="title">Amanda Seyfried</div>
           </a>
         </div>
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="static/img/{{stars[2]}}/{{angelina}}" alt="Angelina Jolie"/>
-            <div class="title">Angelina Jolie</div>
+          <a href="#" class="photo-link-block w-inline-block select" data-star="{{stars[2]}}" data-astro="{{angelina}}">
+            <img src="static/img/origin/{{stars[2]}}/{{angelina}}" alt="Angelina Jolie"/>
+            <div id="angelina" class="title">Angelina Jolie</div>
           </a>
         </div>
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="static/img/{{stars[3]}}/{{jesse}}" alt="Jesse Eisenberg"/>
-            <div class="title">Jesse Eisenberg</div>
+          <a href="#" class="photo-link-block w-inline-block select" data-star="{{stars[3]}}" data-astro="{{jesse}}">
+            <img src="static/img/origin/{{stars[3]}}/{{jesse}}" alt="Jesse Eisenberg"/>
+            <div id="jesse" class="title">Jesse Eisenberg</div>
           </a>
         </div>
+
+          <!-- Beginning of the results rows -->
+        <h3 id="result" class="brand_text">? x ?:</h3>
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="" alt=""/>
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed1" src="" alt=""/>
             <div class="title"></div>
           </a>
         </div>
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="" alt=""/>
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed2" src="" alt=""/>
             <div class="title"></div>
           </a>
         </div>
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="" alt=""/>
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed3" src="" alt=""/>
             <div class="title"></div>
           </a>
         </div>
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="" class="photo-link-block w-inline-block">
-            <img src="" alt=""/>
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed4" src="" alt=""/>
             <div class="title"></div>
           </a>
         </div>
-        <!--
         <div role="listitem" class="w-dyn-item w-col w-col-3">
-          <a href="/photos/dog" class="photo-link-block w-inline-block">
-            <img src="https://assets.website-files.com/5e4b16080b25eddf8f4d5264/5e4b16080b25ed48de4d52a9_photo-1441906363162-903afd0d3d52-square700.jpg" alt=""/>
-            <div class="title">Blue Foam</div>
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed5" src="" alt=""/>
+            <div class="title"></div>
           </a>
         </div>
-        -->
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed6" src="" alt=""/>
+            <div class="title"></div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed7" src="" alt=""/>
+            <div class="title"></div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item w-col w-col-3">
+          <a class="photo-link-block w-inline-block">
+            <img id="mixed8" src="" alt=""/>
+            <div class="title"></div>
+          </a>
+        </div>
       </div>
     </div>
+    <h3 class="brand_text">Refresh page to generate new images</h3>
   </div>
 </div>
 <!-- End content -->
