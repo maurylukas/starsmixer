@@ -31,62 +31,11 @@
     -->
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
     <script type="text/javascript">
-      let selecionado = 0;
-      let astro1 = "";
-      let astro1texto = "";
-      let astro2 = "";
-      let astro2texto = "";
+      // importing python variables and converting them to javascript
       let mixes = JSON.parse({{ mixes | tojson | safe }});
       let list_mixes = JSON.parse({{ list_mixes | tojson | safe }});
-      console.log(mixes)
-      console.log(list_mixes)
-
-      function handleSelection(event) {
-        if (selecionado < 1) {
-          selecionado = 1;
-          astro1 = $(this).find('.title').attr('id');
-          astro1texto = document.getElementById(astro1).innerHTML
-          document.getElementById("result").innerHTML = astro1texto + " x ?:";
-        } else if (selecionado > 1) {
-          selecionado = 0;
-          document.getElementById(astro1).innerHTML = astro1texto;
-          document.getElementById(astro2).innerHTML = astro2texto;
-          $("#mixed1").attr ("src", "");
-          $("#mixed2").attr ("src", "");
-          $("#mixed3").attr ("src", "");
-          $("#mixed4").attr ("src", "");
-          $("#mixed5").attr ("src", "");
-          $("#mixed6").attr ("src", "");
-          $("#mixed7").attr ("src", "");
-          $("#mixed8").attr ("src", "");
-          handleSelection.call(this, event);
-        } else {
-          astro2 = $(this).find('.title').attr('id');
-          astro2texto = document.getElementById(astro2).innerHTML
-          if (astro1 != astro2) {
-            document.getElementById("result").innerHTML = astro1texto + " x " + astro2texto + ":";
-            for (let i = 0; i < mixes.length; i++) {
-              if (mixes[i].includes(astro1) && mixes[i].includes(astro2)) {
-                console.log(mixes[i])
-                $("#mixed1").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][0]);
-                $("#mixed2").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][1]);
-                $("#mixed3").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][2]);
-                $("#mixed4").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][3]);
-                $("#mixed5").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][4]);
-                $("#mixed6").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][5]);
-                $("#mixed7").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][6]);
-                $("#mixed8").attr ("src", "static/img/mixed/" + mixes[i] + "/" + list_mixes[i][7]);
-              }
-            }
-            selecionado = 2;
-          }
-        }
-      }
-
-      $(document).ready(function() {
-        $('.select').on('click', handleSelection);
-      });
     </script>
+    <script type="text/javascript" src="static/doc/funcao.js"></script>
     <!-- End importing scripts -->
 
   </body>
