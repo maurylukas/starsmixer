@@ -9,6 +9,7 @@ import random
 # getting folders
 origin_path = 'sm/static/img/origin/'
 stars = os.listdir(origin_path)
+stars.sort()
 
 mixed_path = 'sm/static/img/mixed/'
 mixes = os.listdir(mixed_path)
