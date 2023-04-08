@@ -20,3 +20,5 @@ markupsafe==2.1.2
     #   werkzeug
 werkzeug==2.2.3
     # via flask
+gunicorn==20.1.0
+    # via manually
